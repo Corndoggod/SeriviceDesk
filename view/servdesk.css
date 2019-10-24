@@ -1,0 +1,334 @@
+* {
+    -fx-primary: rgba(42,45,54,1);
+    -fx-secondary: rgba(68,69,82,1);
+    -fx-light: white;/*rgba(141,142,147,1);*/
+/*    -fx-hardGrad: rgba(28,212,195,1);
+    -fx-lightGrad: rgba(3,209,92,1);*/
+    -fx-hardGrad: rgba(43,82,120,1);
+    -fx-lightGrad: rgba(88,160,217,1);
+}
+
+.parent{
+    -fx-background-color:-fx-primary;
+}
+
+.mainFxmlClass{
+    -fx-background-color:-fx-primary;
+}
+
+.TaskHead{
+    -fx-font-family: Tahoma;
+    -fx-background-color: -fx-light;
+    -fx-text-fill: -fx-secondary;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10 10 0 0;
+                    -fx-font-weight: bold;
+                    -fx-font-size: 15;
+}
+
+.UserNote{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: -fx-primary;
+    -fx-font-family: Tahoma;
+                    -fx-font-weight: bold;
+                    -fx-font-size: 16;
+}
+
+.UserNote .content{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 0 0 10 10;
+}
+
+.UserNote .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.MasterNote{
+    -fx-font-family: Tahoma;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: -fx-primary;
+                    -fx-font-weight: bold;
+                    -fx-font-size: 16;
+}
+
+.MasterNote .content{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 10;
+}
+
+.MasterNote .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.TaskList{
+    -fx-font-family: Tahoma;
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 10;
+}
+
+.TaskList .cell{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-light;
+                    -fx-font-weight: bold;
+                    -fx-font-size: 14;
+    -fx-highlight-fill: -fx-lightGrad;
+}
+.TaskList .cell:selected:focused{
+    -fx-background-color: transparent;
+    -fx-border-color: -fx-lightGrad;
+        /*linear-gradient(to bottom, -fx-lightGrad, -fx-hardGrad);*/
+}
+.TaskList .scroll-bar{
+    -fx-background-color:transparent;
+}
+/*.TaskList .scroll-bar .track{
+    -fx-background-color:-fx-light;
+    -fx-background-radius: 100;
+}*/
+.TaskList .scroll-bar .thumb{
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 100;
+}
+.TaskList .scroll-bar .increment-arrow, .decrement-arrow{
+    -fx-opacity:0;
+}
+.TaskList .corner{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 0 0 10 0;
+}
+
+.button{
+    -fx-background-color: -fx-primary;
+    -fx-border-radius: 20;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+    -fx-text-fill: -fx-light;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 16;
+}
+
+.horizontalSeparator{
+    -fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 80% , -fx-lightGrad, -fx-hardGrad);
+}
+
+.horizontalSeparator .line{
+    -fx-opacity: 0;
+}
+.verticalSeparator{
+    -fx-background-color: black;
+    -fx-opacity: 0.5;
+}
+.verticalSeparator .line{
+    -fx-opacity: 0;
+    -fx-border-width: 0.3;
+}
+
+.label{
+    -fx-text-fill: -fx-light;
+    -fx-font-family: Tahoma;
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 8;
+}
+.label-14{
+    -fx-text-fill: -fx-light;
+    -fx-font-family: Tahoma;
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 8;
+    -fx-font-size: 14;
+}
+
+.combo-box{
+    -fx-background-color: -fx-primary;
+    -fx-border-radius: 20;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+}
+.combo-box:showing{
+    -fx-background-color: -fx-primary;
+    -fx-border-radius: 17 17 0 0;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+}
+.combo-box .list-cell 
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+    -fx-background-radius: 20;
+}    
+.combo-box .list-view{
+    -fx-background-color: -fx-primary;
+    -fx-border-radius: 0 0 17 17;
+    -fx-background-radius: 0 0 20 20;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+}
+
+.mainBox{
+    -fx-background-color: transparent;
+    -fx-border-radius: 20;
+    -fx-border-color: transparent;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+}
+.mainBox:showing{
+    -fx-background-color: transparent;
+    -fx-border-radius: 17 17 0 0;
+    -fx-border-color: transparent;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+}
+.mainBox .list-cell 
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 18;
+}    
+.mainBox .list-view{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+}
+.mainBox .arrow{
+    -fx-background-color: transparent;
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-border-color: -fx-light;
+   -fx-border-radius: 10;
+}
+.chart-legend .content{
+   -fx-background-color:  -fx-light;
+   -fx-text-fill: -fx-primary;
+}
+.chart-pie{
+    -fx-border-color: transparent;
+    -fx-pref-width: 400;
+    -fx-pref-height: 400;
+}
+.chart-pie-label{
+    -fx-fill: -fx-light;
+    -fx-font-size: 14;
+}
+
+.axis {
+    -fx-tick-label-fill: -fx-light;
+    -fx-font-family: Tahoma;
+    -fx-tick-label-font-size: 16;      
+}
+
+
+.TotalNote{
+    -fx-font-family: Tahoma;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: -fx-primary;
+                    -fx-font-weight: bold;
+                    -fx-font-size: 16;
+}
+
+.TotalNote .content{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 10; 
+}
+.TotalNote .viewport{
+    -fx-background-radius: 10;
+}
+
+.TotalNote .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.TotalNote .scroll-bar{
+    -fx-background-color:transparent;
+}
+.TotalNote .scroll-bar .track{
+    -fx-background-color:-fx-light;
+    -fx-background-radius: 100;
+}
+.TotalNote .scroll-bar .thumb{
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 100;
+}
+.TotalNote .scroll-bar .increment-arrow, .decrement-arrow{
+    -fx-opacity:0;
+}
+
+.progress-bar .track{
+    -fx-background-color: transparent;
+    -fx-border-color: -fx-light;
+    -fx-border-radius: 10;
+}
+.progress-bar .bar{
+    -fx-background-color: -fx-lightGrad;
+    -fx-background-radius: 10;
+}
+
+.date-picker{
+    -fx-background-color: -fx-hardGrad;
+    -fx-background-radius: 14;
+}
+.date-picker:showing{
+    -fx-background-color: -fx-hardGrad;
+    -fx-background-radius: 14 14 0 0;
+}
+
+.date-picker .text-field{
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 14 0 0 14;
+    -fx-font-size: 14;
+    -fx-text-fill: -fx-light;
+}
+.date-picker:showing .text-field{
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 14 0 0 0;
+    -fx-font-size: 14;
+    -fx-text-fill: -fx-light;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 0 14 14 0;
+    -fx-border-color: -fx-hardGrad;
+    -fx-border-radius: 0 14 14 0;
+}
+.date-picker:showing .arrow-button {
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 0 14 0 0;
+    -fx-border-color: -fx-hardGrad;
+    -fx-border-radius: 0 14 0 0;
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: -fx-primary;
+}
+.date-picker-popup .calendar-grid .date-cell{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-light;
+    -fx-font-size: 14;
+    -fx-border-color: -fx-hardGrad;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: slategray;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: slategray;
+}

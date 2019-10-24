@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" stylesheets="@servdesk.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="servicedesk.control.FXMLKnowledgeBaseController">
+   <children>
+      <Pane layoutX="91.0" layoutY="60.0" prefHeight="650.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ListView fx:id="categoryListView" layoutX="30.0" layoutY="30.0" prefHeight="135.0" prefWidth="240.0" style="-fx-background-radius: 10 10 0 0; -fx-border-color: rgba(42,45,54,1); -fx-border-radius: 10 10 0 0; -fx-border-width: 0 0 1 0;" styleClass="TaskList" />
+            <ListView fx:id="tipsListView" layoutX="30.0" layoutY="190.0" prefHeight="430.0" prefWidth="240.0" style="-fx-background-radius: 0 0 10 10;" styleClass="TaskList" />
+            <TextField fx:id="searchField" layoutX="30.0" layoutY="165.0" onAction="#tipSearch" prefHeight="25.0" prefWidth="240.0" promptText="Поиск" style="-fx-background-radius: 0;" styleClass="TaskHead" />
+            <TextArea fx:id="tipArea" editable="false" layoutX="299.0" layoutY="55.0" prefHeight="501.0" prefWidth="672.0" styleClass="UserNote" wrapText="true" />
+            <TextField fx:id="headField" editable="false" layoutX="300.0" layoutY="30.0" prefHeight="25.0" prefWidth="670.0" styleClass="TaskHead" />
+            <Button layoutX="300.0" layoutY="580.0" mnemonicParsing="false" prefHeight="40.0" text="Добавить решение" />
+            <Button layoutX="837.0" layoutY="580.0" mnemonicParsing="false" prefHeight="40.0" text="Редактировать" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

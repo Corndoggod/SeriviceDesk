@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1080.0" styleClass="mainFxmlClass" stylesheets="@servdesk.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="servicedesk.control.FXMLBarChartWindowController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="1080.0">
+         <children>
+            <BarChart fx:id="barChart" animated="false" layoutX="40.0" layoutY="40.0" prefHeight="450.0" prefWidth="1000.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <ComboBox fx:id="searchBox" layoutX="40.0" layoutY="500.0" onAction="#searchTypeAction" prefHeight="36.0" prefWidth="235.0" promptText="Вид отбора" />
+            <DatePicker layoutX="785.0" layoutY="500.0" prefWidth="255.0" />
+            <DatePicker layoutX="785.0" layoutY="543.0" prefWidth="255.0" />
+            <Label layoutX="756.0" layoutY="509.0" styleClass="label-14" text="От" />
+            <Label layoutX="756.0" layoutY="549.0" styleClass="label-14" text="До" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

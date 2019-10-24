@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="810.0" styleClass="mainFxmlClass" stylesheets="@servdesk.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="servicedesk.control.FXMLPieChartWindowController">
+   <children>
+      <PieChart fx:id="pieChart" labelLineLength="15.0" layoutX="30.0" layoutY="30.0" prefHeight="400.0" prefWidth="750.0" styleClass="mainFxmlClass" />
+      <ComboBox fx:id="employeeBox" layoutX="30.0" layoutY="450.0" onAction="#employeeBoxAction" prefWidth="200.0" promptText="Мастер" />
+      <Separator layoutX="30.0" layoutY="30.0" prefWidth="750.0" styleClass="horizontalSeparator" />
+      <Separator layoutX="30.0" layoutY="430.0" prefWidth="750.0" styleClass="horizontalSeparator" />
+      <TextArea fx:id="totalArea" layoutX="30.0" layoutY="490.0" prefHeight="130.0" prefWidth="750.0" styleClass="TotalNote" />
+      <ComboBox fx:id="stateBox" layoutX="270.0" layoutY="450.0" onAction="#stateBoxAction" prefWidth="200.0" promptText="Состояние" />
+      <DatePicker layoutX="57.0" layoutY="632.0" prefWidth="255.0" />
+      <Label layoutX="30.0" layoutY="638.0" styleClass="label-14" text="От" />
+      <Label layoutX="344.0" layoutY="638.0" styleClass="label-14" text="До" />
+      <DatePicker layoutX="370.0" layoutY="632.0" prefWidth="255.0" />
+   </children>
+</AnchorPane>

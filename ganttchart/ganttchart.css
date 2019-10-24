@@ -1,0 +1,105 @@
+* {
+    -fx-primary: rgba(42,45,54,1);
+    -fx-secondary: rgba(68,69,82,1);
+    -fx-light: white;/*rgba(141,142,147,1);*/
+    -fx-hardGrad: rgba(43,82,120,1);
+    -fx-lightGrad: rgba(88,160,217,1);
+}
+.status-red {
+    -fx-background-color:rgba(128,0,0,0.7);
+    -fx-border-color:rgba(0,0,0,1)
+}
+.status-green {
+    -fx-background-color:rgba(0,128,0,0.7);
+    -fx-border-color:rgba(0,0,0,1)
+}
+.status-blue {
+    -fx-background-color:rgba(0,0,128,0.7);
+    -fx-border-color:rgba(0,0,0,1)
+}
+
+.chart{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-light;
+}
+.scroll-pane{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: -fx-secondary;
+}
+.scroll-pane .scroll-bar{
+    -fx-background-color:transparent;
+}
+.scroll-pane .scroll-bar .track{
+    -fx-background-color:-fx-light;
+    -fx-background-radius: 100;
+}
+.scroll-pane .scroll-bar .increment-arrow, .decrement-arrow{
+    -fx-opacity:0;
+}
+.scroll-pane .scroll-bar .thumb{
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 100;
+}
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-pane .corner{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 0 0 10 0;
+}
+
+.label{
+    -fx-text-fill: -fx-light;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 16;
+}
+
+.combo-box{
+    -fx-background-color: -fx-primary;
+    -fx-border-radius: 20;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+}
+.combo-box:showing{
+    -fx-background-color: transparent;
+    -fx-border-radius: 15 15 0 0;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+}
+.combo-box .list-cell 
+{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-light;
+    -fx-prompt-text-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 14;
+    -fx-background-radius: 20;
+}    
+.combo-box .list-view{
+    -fx-background-color: -fx-primary;
+    -fx-border-radius: 0 0 17 17;
+    -fx-background-radius: 0 0 20 20;
+    -fx-border-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 50% , -fx-lightGrad, -fx-hardGrad);
+}
+
+.axis {
+    -fx-tick-label-fill: -fx-light;
+    -fx-font-family: Tahoma;
+                    -fx-tick-label-font-size: 14;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: slategray;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: slategray;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="270.0" styleClass="mainFxmlClass" stylesheets="@servdesk.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="servicedesk.control.DiagramWindowController">
+   <children>
+      <Pane prefHeight="290.0" prefWidth="270.0" stylesheets="@servdesk.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="ganttButton" layoutX="35.0" layoutY="30.0" mnemonicParsing="false" onAction="#ganttBtnAction" prefHeight="45.0" prefWidth="200.0" text="Диаграмма Гантта" />
+            <Button fx:id="pieChartButton" layoutX="35.0" layoutY="90.0" mnemonicParsing="false" onAction="#pieChartBtnAction" prefHeight="45.0" prefWidth="200.0" text="Круговая диаграмма" />
+            <Button fx:id="barChartButton" layoutX="35.0" layoutY="150.0" mnemonicParsing="false" onAction="#barChartBtnAction" prefHeight="45.0" prefWidth="200.0" text="Гистограмма" />
+            <Button fx:id="areaChartButton" layoutX="35.0" layoutY="210.0" mnemonicParsing="false" onAction="#areaChartBtnAction" prefHeight="45.0" prefWidth="200.0" text="Диаграмма с областями" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
